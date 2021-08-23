@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {ThemeContext ,themes ,ThemeProvider}  from './ThemeContext';
 
+// const ThemeContext = React.createContext();
+
+const name= "manmeet"
 ReactDOM.render(
   <React.StrictMode>
+    <ThemeProvider >
     <App />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
